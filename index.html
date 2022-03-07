@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kimia Farma Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title"><img src="/img/logo-kimia-farma.jpg" alt="logo" /></h1>
+    <p id="description">terima kasih telah meluangkan waktu untuk membantu kami meningkatkan pelayanan dari Kimia Farma</p>
+    <form id="Survey-form">
+      <label for="name" id="label-name">
+        Nama
+        <input type="name" id="name" placeholder="masukan nama anda" required />
+      </label>
+      <label for="email" id="label-email">
+        Email
+        <input type="email" id="email" placeholder="masukan email anda" required />
+      </label>
+      <label for="number" id="label-number">
+        Umur
+        <input type="number" id="number" placeholder="masukan umur anda" min="17" max="50" required />
+      </label>
+      <label for="dropdown" id="dropdown-label">
+        bagaimana pelayanan di Kimia Farma
+        <select id="dropdown">
+          <option>Sangat Memuaskan</option>
+          <option>Cukup Memuaskan</option>
+          <option>Kurang Memuaskan</option>
+        </select>
+      </label>
+      <label for="member" id="member-label">Kimia Farma Terdekat</label>
+      <input type="radio" name="member" value="1" checked />Kimia Farma Agus Salim <br />
+      <input type="radio" name="member" value="2" checked />Kimia Farma bung tomo <br />
+      <input type="radio" name="member" value="3" checked />Kimia Farma slamet ryadi <br />
+      <input type="radio" name="member" value="4" checked />Kimia Farma ir juanda<br />
+      <label for="comments" is="comments-label">
+        <br />
+        saran dan kesan selama berobat di Kimia Farma
+        <textarea id="comments" cols="30" rows="10" placeholder="saran dan kesan"></textarea>
+      </label>
+      <button id="submit" type="submit">submit</button>
+    </form>
+  </body>
+</html>
